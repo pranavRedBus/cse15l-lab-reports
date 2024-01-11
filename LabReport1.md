@@ -12,7 +12,9 @@
 [user@sahara ~]$ 
 ```
 > Working directory: **/lecture1**
+> 
 > I got this output because cd, with no commands given, returns the terminal to the /home directory, or the most general directory in which the workspace is set up.
+> 
 > Not an error
 
 
@@ -24,7 +26,9 @@
 [user@sahara ~/lecture1]$ 
 ```
 > Working directory: **/home**
+> 
 > I got this output because cd, when given a proper directory that is directly below it (accessible 1 folder down), enters that directory.
+> 
 > Not an error
 
 
@@ -36,7 +40,9 @@
 bash: cd: Hello.java: Not a directory
 ```
 > Working directory: **/lecture1**
+> 
 > I got this output since cd can only be used to change *directories*, moving from one to another, and a file does not fall into the category of directory.
+> 
 > Error
 
 ***
