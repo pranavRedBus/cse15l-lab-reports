@@ -1,7 +1,7 @@
 # **Lab Report 1 by Pranav Redbus**
 ***
 
-# cd
+# 'cd'
 
 
 ## Example 1- No Arg
@@ -32,7 +32,7 @@ bash: cd: Hello.java: Not a directory
 ***
 
 
-# ls
+# 'ls'
 
 
 ## Example 1- No arg
@@ -64,7 +64,7 @@ Hello.java
 ***
 
 
-# cat
+# 'cat'
 
 
 ## Example 1- No arg
