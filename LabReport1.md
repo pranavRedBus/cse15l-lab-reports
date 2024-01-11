@@ -6,29 +6,28 @@
 
 ## Example 1- No Arg
 
-'''
+```
 # code block
 [user@sahara ~/lecture1/messages]$ cd
 [user@sahara ~]$ 
-'''
-
+```
 
 ## Example 2- Directory
 
-'''
+```
 # code block
 [user@sahara ~]$ cd lecture1
 [user@sahara ~/lecture1]$ 
-'''
+```
 
 
 ## Example 3- File
 
-'''
+```
 # code block
 [user@sahara ~/lecture1]$ cd Hello.java
 bash: cd: Hello.java: Not a directory
-'''
+```
 
 ***
 
@@ -38,29 +37,29 @@ bash: cd: Hello.java: Not a directory
 
 ## Example 1- No arg
 
-'''
+```
 # code block
 [user@sahara ~/lecture1]$ ls
 Hello.class  Hello.java  messages  README
-'''
+```
 
 
 ## Example 2- Directory
 
-'''
+```
 # code block
 [user@sahara ~/lecture1]$ ls messages
 en-us.txt  es-mx.txt  tel.txt  zh-cn.txt
-'''
+```
 
 
 ## Example 3- File
 
-'''
+```
 # code block
 [user@sahara ~/lecture1]$ ls Hello.java 
 Hello.java
-'''
+```
 
 ***
 
@@ -70,25 +69,25 @@ Hello.java
 
 ## Example 1- No arg
 
-'''
+```
 #code block
 [user@sahara ~]$ cat 
 
-'''
+```
 
 
 ## Example 2- Directory
 
-'''
+```
 #code block
 [user@sahara ~/lecture1]$ cat messages
 cat: messages: Is a directory
-'''
+```
 
 
 ## Example 3- File
 
-'''
+```
 #code block
 [user@sahara ~/lecture1]$ cat Hello.java
 import java.io.IOException;
@@ -102,4 +101,4 @@ public class Hello {
     System.out.println(content);
   }
 }
-'''
+```
