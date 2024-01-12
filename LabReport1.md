@@ -3,6 +3,7 @@
 
 # 'cd'
 
+* Changes the directory by getting more/less/equally specific
 
 ## Example 1- No Arg
 
@@ -50,6 +51,7 @@ bash: cd: Hello.java: Not a directory
 
 # 'ls'
 
+* Lists all possible paths from given/current location
 
 ## Example 1- No arg
 
@@ -88,10 +90,16 @@ Hello.java
 ```
 
 ***
+> Working directory: **/lecture1**
+>
+> This time, a file was specified, and since a file only has its contents (itself), its name is the only listed path by the ls function.
+>
+> Not error
 
 
 # 'cat'
 
+* Prints the contents of a file (excluding binary files), and concatenates them when given multiple arguments. Does not work with directories.
 
 ## Example 1- No arg
 
@@ -100,6 +108,11 @@ Hello.java
 [user@sahara ~]$ cat 
 
 ```
+> Working directory: **/home**
+>
+> The 'cat' command concatenates text from files, but since no file was given for it, there was nothing to print, leading to an empty line being printed.
+>
+> Not error.
 
 
 ## Example 2- Directory
@@ -109,6 +122,11 @@ Hello.java
 [user@sahara ~/lecture1]$ cat messages
 cat: messages: Is a directory
 ```
+> Working directory: **/lecture1**
+>
+> The 'cat' command cannot concatenate directories as there could be multiple files that can be opened from them, and there is no text contained directly under them. Therefore, the terminal would not know what to print, leading to an error
+>
+> Error.
 
 
 ## Example 3- File
@@ -128,3 +146,8 @@ public class Hello {
   }
 }
 ```
+> Working directory: **/lecture1**
+>
+> The 'cat' command concatenates text from files, including code, and so it prints out everything written in the Hello.java file after being called.
+>
+> Not error.
