@@ -58,6 +58,11 @@ bash: cd: Hello.java: Not a directory
 [user@sahara ~/lecture1]$ ls
 Hello.class  Hello.java  messages  README
 ```
+> Working directory: **/lecture1**
+>
+> I got this output because *ls* gives a list of files, folders, and directories that the terminal could next enter, either from the directory/file specified as an argument, or from the working directory if no arguments are passed. In this case, the *lecture1* directory contains Hello.class,  Hello.java,  messages,  and README are accessible to the terminal, so they are listed when the command is called.
+>
+> Not error.
 
 
 ## Example 2- Directory
@@ -67,6 +72,11 @@ Hello.class  Hello.java  messages  README
 [user@sahara ~/lecture1]$ ls messages
 en-us.txt  es-mx.txt  tel.txt  zh-cn.txt
 ```
+> Working directory: **/lecture1**
+>
+> This time, a directory was specified, and since a directory can have multiple files/directories in it, all of those files and other directories are listed by the command.
+>
+> Not error.
 
 
 ## Example 3- File
