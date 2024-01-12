@@ -1,4 +1,6 @@
-# **Lab Report 1 by Pranav Redbus**
+# **Lab Report 1**
+
+Pranav Reddy Bussannagari
 ***
 
 # 'cd'
