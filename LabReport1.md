@@ -64,7 +64,7 @@ Hello.class  Hello.java  messages  README
 ```
 > Working directory: **`/home/lecture1`**
 >
-> I got this output because `ls` gives a list of files, folders, and directories that the terminal could next enter, either from the directory/file specified as an argument, or from the working directory if no arguments are passed. In this case, the *lecture1* directory contains `Hello.class`,  `Hello.java`,  `messages`,  and `README` are accessible to the terminal, so they are listed when the command is called.
+> I got this output because `ls` gives a list of files, folders, and directories that the terminal could next enter, either from the directory/file specified as an argument, or from the working directory if no arguments are passed. In this case, the `lecture1` directory contains `Hello.class`,  `Hello.java`,  `messages`,  and `README` are accessible to the terminal, so they are listed when the command is called.
 >
 > Not error.
 
