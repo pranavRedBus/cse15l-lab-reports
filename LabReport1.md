@@ -112,7 +112,7 @@ Hello.java
 ```
 > Working directory: **`/home`**
 >
-> The `cat` command concatenates text from files, but since no file was given for it, there was nothing to print, leading to an empty line being printed.
+> The `cat` command concatenates text from files, but since no file was given for it, there was nothing to print, leading to an empty line being printed. If anything is written in this line, cat will output the same written value from the terminal.
 >
 > Not error.
 
