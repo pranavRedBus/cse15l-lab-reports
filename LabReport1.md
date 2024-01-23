@@ -16,7 +16,7 @@ Pranav Reddy Bussannagari
 ```
 > Working directory: **/home/lecture1**
 > 
-> I got this output because cd, with no commands given, returns the terminal to the /home directory, or the most general directory in which the workspace is set up.
+> I got this output because `cd`, with no commands given, returns the terminal to the `/home` directory, or the most general directory in which the workspace is set up.
 > 
 > Not an error
 
@@ -30,7 +30,7 @@ Pranav Reddy Bussannagari
 ```
 > Working directory: **/home**
 > 
-> I got this output because cd, when given a proper directory that is directly below it (accessible 1 folder down), enters that directory.
+> I got this output because `cd`, when given a proper directory that is directly below it (accessible 1 folder down), enters that directory.
 > 
 > Not an error
 
@@ -44,9 +44,9 @@ bash: cd: Hello.java: Not a directory
 ```
 > Working directory: **/home/lecture1**
 > 
-> I got this output since cd can only be used to change *directories*, moving from one to another, and a file does not fall into the category of directory.
+> I got this output since `cd` can only be used to change *directories*, moving from one to another, and a file does not fall into the category of directory.
 > 
-> Error
+> Error: the command `cd` does not work in this case, returning a message rather than changing a directory, since `Hello.java` is a file, and one cannot change directories into a file– only other directories.
 
 ***
 
@@ -64,7 +64,7 @@ Hello.class  Hello.java  messages  README
 ```
 > Working directory: **/home/lecture1**
 >
-> I got this output because *ls* gives a list of files, folders, and directories that the terminal could next enter, either from the directory/file specified as an argument, or from the working directory if no arguments are passed. In this case, the *lecture1* directory contains Hello.class,  Hello.java,  messages,  and README are accessible to the terminal, so they are listed when the command is called.
+> I got this output because *ls* gives a list of files, folders, and directories that the terminal could next enter, either from the directory/file specified as an argument, or from the working directory if no arguments are passed. In this case, the *lecture1* directory contains `Hello.class`,  `Hello.java`,  `messages`,  and `README` are accessible to the terminal, so they are listed when the command is called.
 >
 > Not error.
 
@@ -94,7 +94,7 @@ Hello.java
 ***
 > Working directory: **/home/lecture1**
 >
-> This time, a file was specified, and since a file only has its contents (itself), its name is the only listed path by the ls function.
+> This time, a file was specified, and since a file only has its contents (itself), its name is the only listed path by the `ls` function.
 >
 > Not error
 
@@ -112,7 +112,7 @@ Hello.java
 ```
 > Working directory: **/home**
 >
-> The 'cat' command concatenates text from files, but since no file was given for it, there was nothing to print, leading to an empty line being printed.
+> The `'cat'` command concatenates text from files, but since no file was given for it, there was nothing to print, leading to an empty line being printed.
 >
 > Not error.
 
@@ -126,7 +126,7 @@ cat: messages: Is a directory
 ```
 > Working directory: **/home/lecture1**
 >
-> The 'cat' command cannot concatenate directories as there could be multiple files that can be opened from them, and there is no text contained directly under them. Therefore, the terminal would not know what to print, leading to an error
+> The `'cat'` command cannot concatenate directories as there could be multiple files that can be opened from them, and there is no text contained directly under them. Therefore, the terminal would not know what to print, leading to an error
 >
 > Error.
 
@@ -150,6 +150,6 @@ public class Hello {
 ```
 > Working directory: **/home/lecture1**
 >
-> The 'cat' command concatenates text from files, including code, and so it prints out everything written in the Hello.java file after being called.
+> The `'cat'` command concatenates text from files, including code, and so it prints out everything written in the `Hello.java` file after being called.
 >
 > Not error.
