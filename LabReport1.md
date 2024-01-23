@@ -32,7 +32,7 @@ Pranav Reddy Bussannagari
 > 
 > I got this output because `cd`, when given a proper directory that is directly below it (accessible 1 folder down), enters that directory.
 > 
-> Not an error
+> Not an error.
 
 
 ## Example 3- File
@@ -96,7 +96,7 @@ Hello.java
 >
 > This time, a file was specified, and since a file only has its contents (itself), its name is the only listed path by the `ls` function.
 >
-> Not error
+> Not error.
 
 
 # 'cat'
@@ -112,7 +112,7 @@ Hello.java
 ```
 > Working directory: **/home**
 >
-> The `'cat'` command concatenates text from files, but since no file was given for it, there was nothing to print, leading to an empty line being printed.
+> The `cat` command concatenates text from files, but since no file was given for it, there was nothing to print, leading to an empty line being printed.
 >
 > Not error.
 
@@ -126,9 +126,9 @@ cat: messages: Is a directory
 ```
 > Working directory: **/home/lecture1**
 >
-> The `'cat'` command cannot concatenate directories as there could be multiple files that can be opened from them, and there is no text contained directly under them. Therefore, the terminal would not know what to print, leading to an error
+> The `cat` command cannot concatenate directories as there could be multiple files that can be opened from them, and there is no text contained directly under them. Therefore, the terminal would not know what to print, leading to an error.
 >
-> Error.
+> Error: `cat` returned a message explaining why it cannot concatenate `messages` rather than the contents of the argument since, as mentioned earlier, it is meant to concatenate the text/writing in a file, which it cannot do when provided with a terminal.
 
 
 ## Example 3- File
@@ -150,6 +150,6 @@ public class Hello {
 ```
 > Working directory: **/home/lecture1**
 >
-> The `'cat'` command concatenates text from files, including code, and so it prints out everything written in the `Hello.java` file after being called.
+> The `cat` command concatenates text from files, including code, and so it prints out everything written in the `Hello.java` file after being called.
 >
 > Not error.
