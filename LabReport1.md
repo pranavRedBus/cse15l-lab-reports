@@ -14,7 +14,7 @@ Pranav Reddy Bussannagari
 [user@sahara ~/lecture1/messages]$ cd
 [user@sahara ~]$ 
 ```
-> Working directory: **/lecture1**
+> Working directory: **/home/lecture1**
 > 
 > I got this output because cd, with no commands given, returns the terminal to the /home directory, or the most general directory in which the workspace is set up.
 > 
@@ -42,7 +42,7 @@ Pranav Reddy Bussannagari
 [user@sahara ~/lecture1]$ cd Hello.java
 bash: cd: Hello.java: Not a directory
 ```
-> Working directory: **/lecture1**
+> Working directory: **/home/lecture1**
 > 
 > I got this output since cd can only be used to change *directories*, moving from one to another, and a file does not fall into the category of directory.
 > 
@@ -62,7 +62,7 @@ bash: cd: Hello.java: Not a directory
 [user@sahara ~/lecture1]$ ls
 Hello.class  Hello.java  messages  README
 ```
-> Working directory: **/lecture1**
+> Working directory: **/home/lecture1**
 >
 > I got this output because *ls* gives a list of files, folders, and directories that the terminal could next enter, either from the directory/file specified as an argument, or from the working directory if no arguments are passed. In this case, the *lecture1* directory contains Hello.class,  Hello.java,  messages,  and README are accessible to the terminal, so they are listed when the command is called.
 >
@@ -76,7 +76,7 @@ Hello.class  Hello.java  messages  README
 [user@sahara ~/lecture1]$ ls messages
 en-us.txt  es-mx.txt  tel.txt  zh-cn.txt
 ```
-> Working directory: **/lecture1**
+> Working directory: **/home/lecture1**
 >
 > This time, a directory was specified, and since a directory can have multiple files/directories in it, all of those files and other directories are listed by the command.
 >
@@ -92,7 +92,7 @@ Hello.java
 ```
 
 ***
-> Working directory: **/lecture1**
+> Working directory: **/home/lecture1**
 >
 > This time, a file was specified, and since a file only has its contents (itself), its name is the only listed path by the ls function.
 >
@@ -124,7 +124,7 @@ Hello.java
 [user@sahara ~/lecture1]$ cat messages
 cat: messages: Is a directory
 ```
-> Working directory: **/lecture1**
+> Working directory: **/home/lecture1**
 >
 > The 'cat' command cannot concatenate directories as there could be multiple files that can be opened from them, and there is no text contained directly under them. Therefore, the terminal would not know what to print, leading to an error
 >
@@ -148,7 +148,7 @@ public class Hello {
   }
 }
 ```
-> Working directory: **/lecture1**
+> Working directory: **/home/lecture1**
 >
 > The 'cat' command concatenates text from files, including code, and so it prints out everything written in the Hello.java file after being called.
 >
