@@ -14,7 +14,7 @@ Pranav Reddy Bussannagari
 [user@sahara ~/lecture1/messages]$ cd
 [user@sahara ~]$ 
 ```
-> Working directory: `**/home/lecture1**`
+> Working directory: **`/home/lecture1`**
 > 
 > I got this output because `cd`, with no commands given, returns the terminal to the `/home` directory, or the most general directory in which the workspace is set up.
 > 
