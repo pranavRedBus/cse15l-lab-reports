@@ -25,6 +25,7 @@ Pranav Reddy Bussannagari
 -   Updates `port` with the number passed in, provided a valid number for the computer to be listening on is provided
 
 > ## Other methods executed
+
 > `getPath()`
 
 ## Screenshot 2
