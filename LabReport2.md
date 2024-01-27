@@ -10,6 +10,7 @@ Pranav Reddy Bussannagari
 ![ChatServerUse](ChatServerUse.png)
 
 > ## Methods from my code
+
 > `Server.start(int port, new Handler())`;
 -   Arguments: integer value for which port to listen on, Handler object
 -   No values changed as this function just starts a server on the local computer
