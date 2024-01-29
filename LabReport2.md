@@ -39,6 +39,8 @@ Pranav Reddy Bussannagari
 ## Screenshot 2
 ![ChatServerUse2](ChatServerUse2.png)
 
+> ## Methods from my code
+
 > `Server.start(int port, new Handler())`;
 -   Arguments: integer value for which port to listen on, Handler object
 -   No values changed as this function just starts a server on the local computer
@@ -64,3 +66,7 @@ Pranav Reddy Bussannagari
 
 ## Part 2
 
+
+## Part 3
+
+I learned a great deal in Week 3 that I had not known in prior weeks. The best examples of these are the new commands we were introduced to, namely `scp`, `-cp`, `mkdir`, and `man`, and some of their syntax, uses, etc. Another important lesson was on the testing–although I was keen on the importance of tests, the lecture in class gave me an example of why it is important to write different and patterned tests, noticing where some of them fall short of truly checking the code. I also fully understood what makes an absolute path and a relative path different, and which are more useful in which scenarios.
