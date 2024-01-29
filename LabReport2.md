@@ -66,6 +66,11 @@ Pranav Reddy Bussannagari
 
 ## Part 2
 
+- a
+- q
+- Login Without Password
+  ![ChatServerLogin](ChatServerLogin.png)
+  
 
 ## Part 3
 
