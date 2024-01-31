@@ -67,9 +67,9 @@ Pranav Reddy Bussannagari
 ## Part 2
 
 - Private Key
-  ![ChatPub](ChatPub.png)
-- Public Key
   ![ChatPriv](ChatPriv.png)
+- Public Key
+  ![ChatPub](ChatPub.png)
 - Login Without Password
   ![ChatServerLogin](ChatServerLogin.png)
   
