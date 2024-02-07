@@ -78,6 +78,7 @@ Default Constructor for `Handler` class
   ![ChatPriv](ChatPriv.png)
 - Public Key
   ![ChatPub](ChatPub.png)
+  ![PubSSLR2](PubSSLR2.png)
 - Login Without Password
   ![ChatServerLogin](ChatServerLogin.png)
   
