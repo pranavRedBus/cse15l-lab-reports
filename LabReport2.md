@@ -77,7 +77,9 @@ Default Constructor for `Handler` class
 - Private Key
   ![ChatPriv](ChatPriv.png)
 - Public Key
+- On device: 
   ![ChatPub](ChatPub.png)
+- On ieng6 machine
   ![PubSSLR2](PubSSLR2.png)
 - Login Without Password
   ![ChatServerLogin](ChatServerLogin.png)
