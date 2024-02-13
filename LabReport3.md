@@ -3,15 +3,7 @@
 
 # Part 1 (`reversed()` in `Array Examples`)
 - A Failure-Inducing Input
-> @Test
-> 
->  public void testReversedAdjusted() {
-> 
-  >    int[] input1 = {1,2,3,4,5};
-> 
-  >    assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input1));
-> 
->  }
+![FailureInducingOutput](FailureInducingOutput.png)
 
 - A Working Output
 > @Test
