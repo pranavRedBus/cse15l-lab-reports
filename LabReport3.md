@@ -422,14 +422,490 @@
             ./plos/pmed.0020281.txt:20
             ./plos/pmed.0020242.txt:25
   
-3. ## Command 3: `grep -i` (Found using `man grep`)
+3. ## Command 3: `grep -v` (Found using `man grep`)
 - Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
 - **Example 1**:
+>
+> 
+      pranavrb@Pranavs-MacBook-Pro technical % grep  -r -v  "a" ./biomed/1471-2164-2-4.txt
+            ./biomed/1471-2164-2-4.txt:
+            ./biomed/1471-2164-2-4.txt:  
+            ./biomed/1471-2164-2-4.txt:    
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:        Results
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          the OCP is 20-30 bp in length, while the 3'
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          on genomic DNA.
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          different SNPs representing five of the six possible
+            ./biomed/1471-2164-2-4.txt:          high throughput method of genotyping.
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          OCPs for the SNP G1822A.
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:        Discussion
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:        Conclusions
+            ./biomed/1471-2164-2-4.txt:        Corp.
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          Oligonucleotides
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          Elmer).
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          Genomic DNA
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          Tris-HCl (pH 8.3), 25 mM KCl, 10 mM MgCl 
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          mM Tris-HCl (pH 8.8), 10 mM KCl, 10 mM (NH 
+            ./biomed/1471-2164-2-4.txt:          4 ) 
+            ./biomed/1471-2164-2-4.txt:          2 SO 
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:          Buffer supplied by Epicentre Technologies: 20 mM Tris-HCl
+            ./biomed/1471-2164-2-4.txt:          (following Life Technologies suggested protocol for T4
+            ./biomed/1471-2164-2-4.txt:          8% PAGE sequencing gel.
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:        
+            ./biomed/1471-2164-2-4.txt:      
+            ./biomed/1471-2164-2-4.txt:    
+            ./biomed/1471-2164-2-4.txt:  
+
+- **Example 2**:
+>
+> 
+      pranavrb@Pranavs-MacBook-Pro technical % grep  -v  "the" ./biomed/1471-2164-2-4.txt
+    
+        Background
+        Sequencing studies of human transcriptomes and genomes
+        have identified hundreds of thousands of single nucleotide
+        variation [ 1 ] . Human SNPs are being assembled into
+        extremely high-density genetic maps that are anticipated to
+        Broad availability of SNPs for candidate genes will enhance
+        pharmacogenomic and complex trait association studies.
+        make possible genome-wide association studies for complex
+        traits that bypass shortcomings of current genetic linkage
+        analyses [ 3 4 ] .
+        The emerging era of multiplexed SNP-based genetic
+        analysis has underscored a need for simple and accurate
+        genotyping methods that can accommodate thousands of loci
+        with economy of cost and consumption of sample DNA. In
+        general, current methods require pre-amplification of
+        genomic DNA, typically by Polymerase Chain Reaction (PCR),
+        followed by SNP genotyping with an allele discrimination
+        method, such as DNA cleavage, ligation, single base
+        extension or hybridization [ 5 ] . Current methods are
+        sample DNA, or lack of scalability.
+        Recently a new method for SNP detection from genomic DNA
+        based on DNA ligase-mediated single nucleotide
+        discrimination and signal amplification by Rolling Circle
+        Amplification (RCA) has been described [ 6 7 8 9 10 ] . An
+        circularization. In this manner, single base selectivity is
+        exponential RCA (ERCA) reaction involving an exonuclease
+        (-) DNA polymerase with strand-displacement activity and
+        12-fold, allowing for direct SNP genotyping from small
+        quantities of DNA target [ 6 11 12 ] .
+        We describe here a simple, scalable assay for SNP
+        genotyping directly from human genomic DNA that uses a
+        96-well plate format and fluorescent primers called
+        Amplifluors™ [ 13 14 15 12 16 ] . Ten different SNPs have
+        been characterized, each for DNA samples from 192 different
+        individuals, using this reporter assay system. We also
+      
+      
+        Results
+        
+          Experimental strategy
+          Two OCPs were designed for each SNP screened, one
+          it can be circularized by DNA ligase (Fig. 1). The OCPs
+          were ∼ 90 nucleotides in length, and are designed such
+          allele-specific OCPs. The 5' target-specific region of
+          specificity of circularization is dependent upon two
+          correctly base paired ends.
+          template for an exponential, or hyperbranching, RCA
+          backbone, provides a binding site for a complementary
+          primer (P1). In addition to P1, a reverse primer (P2) is
+          also present to achieve amplification with exponential
+          kinetics (Fig. 1). P1 is an "Amplifluor™"-primer, with a
+          5' hairpin and loop structure with a fluorophore and
+          The two allele-specific OCPs have different backbone
+          P1s have an internal DABCYL quencher. Amplifluor primers
+          proximity, preventing fluorescence. Incorporation of
+          resulting in increased fluorescence. Two different
+          partly target- and partly backbone-specific,
+          end to reduce primer-dimer formation (unpublished
+          data).
+        
+        
+          have excellent discrimination between a matched and
+          mismatched 3' terminal nucleotide [ 17 ] . In order to
+          was analyzed using 5' 32P-labeled OCP. The
+          mutation. An electrophoretic mobility shift for
+          circularized OCP allowed quantification of ligation
+          kinetics. Use of 40 nM OCP and 100 nM oligonucleotide
+          target allowed sufficient signal for detection without
+          (Fig. 2a). For mismatched OCP, less than 1% was ligated
+          after 6 hours (Fig. 2b). The ability of Ampligase to
+          discriminate against a mismatch was measured by
+          comparison of initial ligation rates. Allele
+          Discrimination = (percent match ligation/percent mismatch
+          ligation) (time 
+          mismatch /time 
+          match ). Ligation of matched OCP
+          occurred at a 100,000-fold greater rate than for
+          mismatched OCP. Greater temperature and shorter 3' OCP
+          arm length both tended to give increased allele
+          discrimination (Fig. 3). The T 
+          and mismatched 3' arms. Presumably, increasing reaction
+          arm.
+        
+        
+          estimated 100-30,000 OCPs are circularized by ligation
+          gel-purified to remove any linear DNA. A known number of
+          direct analysis of ERCA signal amplification. The circles
+          oligonucleotide target (Table I). A 10-fold serial
+          assay is capable of detecting < 10 molecules of
+          circular template (Fig. 4a). The time at which
+          fluorescent signal is first detected (C 
+          potential of ERCA and that it is capable of detecting and
+          on genomic DNA.
+        
+        
+          SNP genotyping on human genomic DNA
+          The G1822A SNP on chromosome 13q32 was used for
+          restriction endonuclease Alu I and assayed in two
+          specific OCP. Reactions contained 0.5 pM OCP, and 100 ng
+          of approximately 30,000. OCP ligation was performed with
+          Ampligase for 20 min at 60°C, approximately 15°C above
+          hybridizes to its target in a stable manner, and SNP
+          allele (Fig. 5a, center panel) a fluorescence signal was
+          heterozygous, a fluorescence signal was observed with
+          both OCP/primer combinations (Fig. 5a, lower panel). When
+          agarose gel, an ERCA product ladder was observed only for
+          (Fig 5b). ERCA reactions produce a characteristic ladder
+        
+        
+          individuals
+          demonstrated on two sets of human genomic DNA samples,
+          each containing DNA from 96 different individuals. Ten
+          types of single nucleotide substitutions were assayed
+          determined by restriction fragment length polymorphism or
+          extension method. The SNP assay gave correct genotypes an
+          accuracy was above 99% (data not shown). A scatter plot
+          The protocol uses a microtiter plate format providing a
+          high throughput method of genotyping.
+        
+        
+          Single-tube assay for SNP genotyping using a low
+          copy number of targets
+          The above experiments involved a two-tube assay with
+          100 ng of genomic DNA and one OCP/P2 combination per
+          tube. Therefore, a total of 200 ng genomic DNA was used
+          accurately detect a SNP from a small amount of genomic
+          DNA. Previously, it was shown that 20 ng of genomic DNA,
+          signal amplification reaction (SISAR) [ 18 ] . In order
+          SNPs, 1 ng of genomic DNA, equivalent to ∼ 300 copies of
+          The method was also simplified so that instead of one
+          for both OCPs was used. Both OCP systems could be
+          OCP. The P2 for one allele could only effectively prime
+          specificity was achieved by two allele-specific
+          Amplifluor primers (P2-1822C-TET and P2-1822T-FAM). This
+          assay detected and differentiated all three possible
+          signal observed was slightly higher than that obtained
+          with 100 ng genomic DNA in a two-tube system, with a
+          signal/noise ratio of 5:1. However, correct SNP
+          genotyping was observed with 48 different human genomic
+          DNA samples (data not shown).
+        
+      
+      
+        Discussion
+        We have demonstrated a solution-based, efficient,
+        homogeneous and robust assay for genotyping SNPs directly
+        from human genomic DNA utilizing ligation of open circle
+        amplification reaction) in a 96-well format. Specificity of
+        ligation. Single nucleotide discrimination is achieved at
+        ligase, Ampligase, which has a high affinity for a
+        [ 17 ] . We were able to enhance allele discrimination at
+        ligase. It has been previously reported that 3'-T/G and 3'
+        G/T mismatches are not good substrates for single
+        nucleotide discrimination [ 17 ] . However, we found that
+        was efficient for allele discrimination. The ability of
+        involved is an important advantage over assays based on
+        primer extension such as PCR.
+        results in small circular DNA molecules topologically
+        of 10 12-fold signal amplification [ 6 ] , similar to that
+        genetic analysis and quantitation. However, PCR involves
+        risk of amplicon cross-contamination. Even though this
+        high-throughput analysis. Since ERCA is a signal (circle)
+        strategy can be easily adapted for a simple fluorescence
+        plate reader coupled to an adjustable heating block. These
+        properties make it an ideal system for high-throughput
+        analysis.
+        The assay was tested for 10 SNPS on two sets of 96
+        different DNA samples (Table II). Results were compared to
+        nucleotide sequencing reactions. The assay had an average
+        genotyping accuracy of 93% when samples were screened
+        being called heterozygous, i.e., an amplification signal
+        was observed with both sets of OCP/primer combinations. A
+        DNA sample homozygous for one allele was never genotyped as
+        fluorescence signal.
+        accuracy of SNP genotyping. In addition, reagents that have
+        been shown to reduce primer-dimer formation in PCR will be
+        concentration needs to be determined before screening.
+        Excess OCP concentrations result in an increase in
+        accuracy rate of genotyping. Potentially, un-ligated OCP
+        can act as template or primer giving rise to a low level of
+        signal. We are currently developing a modified OCP design
+        hairpin-loop structure and opens up only to anneal to it
+        target sequence (O. Alsmadi, unpublished). As with
+        molecular beacons, this may also improve target specificity
+        [ 19 20 ] . Any unused OCP is self primed and extended to
+        form an inert double stranded molecule, thus eliminating
+        OCP as a source for non-specific amplification. Initial
+        experiments with this design have been encouraging.
+      
+      
+        Conclusions
+        We have described a solution-based SNP genotyping assay
+        that is simple, sensitive and robust and can be easily
+        formatted to high-throughput analysis of single nucleotide
+        polymorphisms and mutation detection directly from human
+        genomic DNA. The SNP genotyping assay uses a simple,
+        homogeneous, fluorescence readout and can be carried out on
+        inexpensive instruments already available in many academic
+        and industrial laboratories.
+        Amplifluor is a trademark of Intergen Company.
+        Ampligase is a trademark of Epicentre Technologies
+        Corp.
+      
+      
+        Materials and methods
+        
+          Oligonucleotides
+          oligonucleotides were obtained from Integrated DNA
+          Technologies, Inc. (Coralville, IA). Abasic and
+          by HPLC. The two Amplifluors are labeled with a
+          differently colored fluorophore: fluorescein (FAM) and
+          tetrachloro-6-carboxyfluorescein (TET) and contain an
+          internal nonfluorescent quencher DABCYL.
+        
+        
+          Instrumentation
+          DNA denaturation, annealing and ligation reactions
+          were carried out in an Eppendorf Master Cycler (Eppendorf
+          Scientific, Germany). ERCA reactions were performed in
+          Elmer).
+        
+        
+          Genomic DNA
+          Genomic DNA samples were obtained from (a) National
+          Institute of Mental Health (NIMH) Center for Genetic
+          Studies, Rutgers University Cell and DNA Repository,
+          Piscataway, NJ and (b) Coriell Cell Repository (HD 100
+          ligation reaction.
+        
+        
+          DNA annealing and ligation
+          The reactions were set up in 96-well MicroAmp Optical
+          plates (Perkin Elmer) in a 10 μl reaction volume
+          containing 1 U Ampligase (Epicentre Technologies), 20 mM
+          Tris-HCl (pH 8.3), 25 mM KCl, 10 mM MgCl 
+          2 , 0.5 mM NAD, and 0.01% Triton
+          ®X-100. Standard reactions contained 0.5 pM OCP and 100
+          ng of Alu I digested genomic DNA. DNA was denatured by
+          annealing and ligation at 60°C for 20 min.
+        
+        
+          ERCA reaction
+          reaction. The ERCA mix contained 5% tetramethyl ammonium
+          primers, 8 u of Bst polymerase (New England Biolabs, MA),
+          and 1X modified ThermoPol reaction buffer containing 20
+          mM Tris-HCl (pH 8.8), 10 mM KCl, 10 mM (NH 
+          4 ) 
+          2 SO 
+          4 and 0.1% Triton X-100.
+        
+        
+          All ligation reactions were in 1x Ampligase Reaction
+          Buffer supplied by Epicentre Technologies: 20 mM Tris-HCl
+          (pH8.3 at 25°C), 25 mM KCl, 10 mM MgCl 
+          2 , 0.5 mM NAD +, and 0.01% Triton
+          (following Life Technologies suggested protocol for T4
+          PNK). 40 nM CFTR M1101K12 OCP (Table I) was annealed to
+          100 nM oligo target, at 95°C, 2 min, and slow cooled to
+          room temperature. Reactions were started by adding
+          Ampligase at 0.2 units/μl final concentration in a
+          reaction volume of 0.1 ml. Reactions time points were
+          taken at 15, 30, and 60 sec for matched OCP and 1, 2, 4,
+          and 6 hours for mismatched OCP. 3.5 μl was resolved on an
+          8% PAGE sequencing gel.
+        
+        
+          OCP 3' arm length and ligation reaction
+          temperature
+          OCP were designed with 12, 15, 20, or 23 nt 3' arms
+          (Table I). All components except Ampligase were
+          63°C) for 20 min to allow OCP annealing to come to
+          equilibrium. Reactions were started by adding Ampligase
+          at 0.2 units/μl final concentration and a reaction volume
+          reaction temperatures indicated. Reactions were stopped
+          at 1 min for matched OCP and 4 hours for mismatched OCP
+          by digestion with 0.75 units/μl Exonuclease I and 1.25
+          units/μl T7 gene 6 exonuclease (Amersham Pharmacia
+          points. The digestion removes all but circular DNA. 3.5
+          μl was resolved on an 8% PAGE sequencing gel.
   
-4. ## Command 4: `grep -v` (Found using `man grep`)
+4. ## Command 4: `grep -L` (Found using `man grep`)
 - **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
 - **Example 1**:
+>
+>
+      pranavrb@Pranavs-MacBook-Pro technical % grep  -r -L  "base" ./biomed
+            ./biomed/bcr620.txt
+            ./biomed/1471-2091-2-11.txt
+            ./biomed/1471-2202-4-12.txt
+            ./biomed/rr73.txt
+            ./biomed/1471-2202-2-8.txt
+            ./biomed/1471-2350-4-2.txt
+            ./biomed/1476-0711-2-7.txt
+            ./biomed/1471-2121-3-13.txt
+            ./biomed/ar118.txt
+            ./biomed/1471-2210-1-10.txt
+            ./biomed/1476-4598-2-20.txt
+            ./biomed/1472-6769-1-4.txt
+            ./biomed/cc4.txt
+            ./biomed/1471-2121-3-12.txt
+            ./biomed/bcr568.txt
+            ./biomed/ar93.txt
+            ./biomed/cc367.txt
+            ./biomed/rr74.txt
+            ./biomed/1471-2210-1-8.txt
+            ./biomed/1471-2091-3-8.txt
+            ./biomed/1471-230X-2-21.txt
+            ./biomed/ar120.txt
+            ./biomed/1471-2407-1-19.txt
+            ./biomed/rr171.txt
+            ./biomed/1471-2172-3-1.txt
+            ./biomed/1471-2415-3-3.txt
+            ./biomed/1472-6769-1-3.txt
+            ./biomed/1471-2202-4-16.txt
+            ./biomed/1471-2180-2-26.txt
+            ./biomed/ar321.txt
+            ./biomed/1471-230X-2-23.txt
+            ./biomed/rr172.txt
+            ./biomed/1472-6785-1-5.txt
+            ./biomed/1471-2172-4-1.txt
+            ./biomed/ar795.txt
+            ./biomed/ar408.txt
+            ./biomed/1471-230X-1-5.txt
+            ./biomed/1471-2172-3-12.txt
+            ./biomed/1471-213X-1-1.txt
+            ./biomed/1471-2202-2-10.txt
+            ./biomed/1471-2172-4-2.txt
+            ./biomed/1471-2091-3-30.txt
+            ./biomed/1471-2172-2-4.txt
+            ./biomed/1471-2121-2-18.txt
+            ./biomed/ar422.txt
+            ./biomed/1475-925X-2-12.txt
+            ./biomed/cc1882.txt
+            ./biomed/1471-2180-3-9.txt
+            ./biomed/1471-2091-3-31.txt
+            ./biomed/1471-213X-1-2.txt
+            ./biomed/1471-2202-3-8.txt
+            ./biomed/1477-7827-1-48.txt
+            ./biomed/1471-213X-3-4.txt
+            ./biomed/1471-2490-3-2.txt
+            ./biomed/ar383.txt
+            ./biomed/ar745.txt
+            ./biomed/1471-213X-3-7.txt
+            ./biomed/1471-2180-3-11.txt
+            ./biomed/1471-2202-2-14.txt
+            ./biomed/cc713.txt
+            ./biomed/1471-2407-2-15.txt
+            ./biomed/1471-2296-3-18.txt
+            ./biomed/ar140.txt
+            ./biomed/1477-7827-1-43.txt
+            ./biomed/1471-2202-1-1.txt
+            ./biomed/1471-2210-2-6.txt
+            ./biomed/1476-4598-2-3.txt
+            ./biomed/1471-2121-2-12.txt
+            ./biomed/1475-925X-2-6.txt
+            ./biomed/ar429.txt
+            ./biomed/1472-6793-3-5.txt
+            ./biomed/1471-2199-3-11.txt
+            ./biomed/1472-6750-2-10.txt
+            ./biomed/1471-2210-2-5.txt
+            ./biomed/gb-2001-3-1-research0005.txt
+            ./biomed/1471-2334-2-26.txt
+            ./biomed/1476-5918-1-2.txt
+            ./biomed/1471-2407-2-33.txt
+            ./biomed/1471-2121-3-6.txt
+            ./biomed/1471-2334-2-27.txt
+            ./biomed/1471-2199-3-10.txt
+            ./biomed/ar407.txt
+            ./biomed/1475-2867-3-2.txt
+            ./biomed/1471-2091-3-15.txt
+            ./biomed/1471-2202-3-4.txt
+            ./biomed/cc1495.txt
+            ./biomed/1475-9268-1-2.txt
+            ./biomed/ar799.txt
+            ./biomed/1471-230X-1-8.txt
+            ./biomed/ar149.txt
+            ./biomed/cc350.txt
+            ./biomed/1471-2199-2-2.txt
+            ./biomed/1471-213X-2-8.txt
+            ./biomed/1471-2369-3-1.txt
+            ./biomed/1471-2121-3-18.txt
+            ./biomed/1471-2121-2-6.txt
+            ./biomed/1475-2891-1-2.txt
+            ./biomed/1471-2334-3-11.txt
+            ./biomed/1471-2202-2-3.txt
+            ./biomed/1471-2210-1-4.txt
+            ./biomed/1471-2121-4-2.txt
+            ./biomed/cc1547.txt
+            ./biomed/1476-4598-2-28.txt
+            ./biomed/1477-7827-1-36.txt
+            ./biomed/1471-213X-1-13.txt
+            ./biomed/1471-2199-2-4.txt
+            ./biomed/1471-2474-3-23.txt
+            ./biomed/1471-2202-2-6.txt
+            ./biomed/1475-2867-2-15.txt
+            ./biomed/1471-2164-2-6.txt
+            ./biomed/1471-2334-1-10.txt
+            ./biomed/1471-2121-3-22.txt
+            ./biomed/rr191.txt
+            ./biomed/1471-2148-1-6.txt
+            ./biomed/1471-2202-4-3.txt
+            ./biomed/1471-230X-2-17.txt
+            ./biomed/1477-5956-1-1.txt
+            ./biomed/ar328.txt
+            ./biomed/1471-2121-4-5.txt
+            ./biomed/1471-2202-3-17.txt
+            ./biomed/1478-1336-1-3.txt
+            ./biomed/1471-2210-1-3.txt
+            ./biomed/1471-2334-1-13.txt
+            ./biomed/1471-2172-3-9.txt
 
+- **Example 2**:
 
 # Sources Used
 1. “Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.
