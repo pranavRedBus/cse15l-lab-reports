@@ -67,9 +67,9 @@
   The fix above works as the original code's bug was that it didn't rigorously test the `reverse()` method at all, creating an empty array to feed into it but not a comprehensive, filled array. By making this switch, I ensure that when the code is passed in with a 5 element `int[]` array, it properly returns the reverse copy of that array, checking with the hand-checked reversed array in the test method. 
 
 # Part 2 (Researching `grep`)
-1. Command 1: `grep -l` (Found using `man grep`)
-- Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
-- Example 1: `grep -l` lists the names of the files, rather than the direct lines from the files, which contain the specified string. In this case, grep -r recursively searches the `technical` directory for matches to *''base pairs''*, and `-l` forces the output to list the names of the files, rather than each line in the file that contains the phrase. 
+1. ## Command 1: `grep -l` (Found using `man grep`)
+- **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
+- **Example 1**: `grep -l` lists the names of the files, rather than the direct lines from the files, which contain the specified string. In this case, grep -r recursively searches the `technical` directory for matches to *''base pairs''*, and `-l` forces the output to list the names of the files, rather than each line in the file that contains the phrase. 
 >
 > 
       pranavrb@Pranavs-MacBook-Pro technical % grep -r -l  "base pair" .          
@@ -150,15 +150,19 @@
             ./biomed/1471-2164-2-4.txt
             ./biomed/1471-2164-4-2.txt
 
-- Example 2
+- **Example 2**
 >
 >
       
-2. Command 2: `grep -c` (Found using `man grep`)
+2. ## Command 2: `grep -c` (Found using `man grep`)
 - Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
-3. Command 3: `grep -i` (Found using `man grep`)
+- 
+  
+3. ## Command 3: `grep -i` (Found using `man grep`)
 - Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
-4. Command 4: `grep -v` (Found using `man grep`)
+- **Example 1**:
+  
+4. ## Command 4: `grep -v` (Found using `man grep`)
 - Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.* 
 
 
