@@ -26,6 +26,7 @@
 
 
 - Symptom
+![ReverseWorksTest](ReverseWorksTest.png)
 
 
 # Part 2 (Researching `less`)
