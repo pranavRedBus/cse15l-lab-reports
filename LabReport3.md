@@ -26,7 +26,11 @@
 
 
 - Symptom
+-   Working Output
 ![ReverseWorksTest](ReverseWorksTest.png)
+
+-   Failure Output
+![ReverseFailure](ReverseFailure.png)
 
 
 # Part 2 (Researching `less`)
