@@ -14,7 +14,7 @@
       }
 
 
-- A Working Output
+- A Working Input
 > 
 > 
       @Test
@@ -27,7 +27,7 @@
       }
 
 
-- Symptom
+# - Symptom
 -   Working Output
 ![ReverseWorksTest](ReverseWorksTest.png)
 
