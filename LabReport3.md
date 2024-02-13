@@ -63,5 +63,7 @@
         return newArray;
     }
 
+- Explanation of Fix
+  The fix above works as the original code's bug was that it didn't rigorously test the `reverse()` method at all, creating an empty array to feed into it but not a comprehensive, filled array. By making this switch, I ensure that when the code is passed in with a 5 element `int[]` array, it properly returns the reverse copy of that array, checking with the hand-checked reversed array in the test method. 
 
 # Part 2 (Researching `less`)
