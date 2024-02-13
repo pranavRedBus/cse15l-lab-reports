@@ -6,15 +6,7 @@
 ![FailureInducingTest](FailureInducingTest.png)
 
 - A Working Output
-> @Test
-> 
->  public void testReversed() {
-> 
-  >    int[] input1 = { };
-> 
-  >    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
-> 
->  }
+![ReverseWorks](ReverseWorks.png)
 
 - Symptom
 
