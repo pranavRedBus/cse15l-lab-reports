@@ -1,7 +1,7 @@
 # Part 1 (`reversed()` in `Array Examples`)
 
 
-- A Failure-Inducing Input
+## - A Failure-Inducing Input
 > 
 > 
       @Test
@@ -14,7 +14,7 @@
       }
 
 
-- A Working Input
+## - A Working Input
 > 
 > 
       @Test
@@ -27,7 +27,7 @@
       }
 
 
-# - Symptom
+## - Symptom
 -   Working Output
 ![ReverseWorksTest](ReverseWorksTest.png)
 
@@ -35,7 +35,7 @@
 ![ReverseFailure](ReverseFailure.png)
 
 
-- Bug
+## - Bug
 -   Before
 > 
 >
@@ -49,6 +49,16 @@
         return arr;
     }
 
+- After
+>
+>
+        static int[] reversed(int[] arr) {
+          int[] newArray = new int[arr.length];
+          for(int i = 0; i < arr.length; i += 1) {
+            newArray[arr.length - i - 1] = arr[i];
+          }
+          return newArray;
+        }
 
 
 # Part 2 (Researching `less`)
