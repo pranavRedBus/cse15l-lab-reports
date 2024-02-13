@@ -150,20 +150,24 @@
             ./biomed/1471-2164-2-4.txt
             ./biomed/1471-2164-4-2.txt
 
-- **Example 2**
+- **Example 2**: `grep -l` lists the names of the files, rather than the direct lines from the files, which contain the specified string. In this case, grep -r recursively searches the `plos` directory for matches to *''base pairs''*, and `-l` forces the output to list the names of the files, rather than each line in the file that contains the phrase. 
 >
 >
-      
+      pranavrb@Pranavs-MacBook-Pro technical % grep -r  -l "base pair" ./plos  
+            ./plos/journal.pbio.0020223.txt
+            ./plos/journal.pbio.0020190.txt
+
 2. ## Command 2: `grep -c` (Found using `man grep`)
-- Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
-- 
+- **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
+- **Example 1**:
   
 3. ## Command 3: `grep -i` (Found using `man grep`)
 - Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
 - **Example 1**:
   
 4. ## Command 4: `grep -v` (Found using `man grep`)
-- Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.* 
+- **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
+- **Example 1**:
 
 
 # Sources Used
