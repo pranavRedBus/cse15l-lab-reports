@@ -3,7 +3,7 @@
 
 # Part 1 (`reversed()` in `Array Examples`)
 - A Failure-Inducing Input
-![FailureInducingOutput](FailureInducingOutput.png)
+![FailureInducingTest](FailureInducingTest.png)
 
 - A Working Output
 > @Test
