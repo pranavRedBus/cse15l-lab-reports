@@ -159,13 +159,13 @@
 
 2. ## Command 2: `grep -c` (Found using `man grep`)
 - **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
-- **Example 1**:
+- **Example 1**: `grep -c` lists how many lines in the file contain the phrase. In this case, grep -c is given the file `biomed/rr74.txt`, and it returns 102 because that is how many lines in the file contain the phrase "the" as passed in.
 >
 >
       pranavrb@Pranavs-MacBook-Pro technical % grep -c  "the" ./biomed/rr74.txt
             102
 
-- **Example 2**:
+- **Example 2**: `grep -c` lists how many lines in the file contain the phrase. In this case, `grep -c` is paired with `-r` (which recursively searches through directories and provides individuals files for `grep`) and given the directory `./plos` as the argument. `grep -c` in this command lists the number of lines in each file that contains the phrase.
 >
 >
       pranavrb@Pranavs-MacBook-Pro technical % grep -r -c "the" ./plos   
@@ -424,7 +424,7 @@
   
 3. ## Command 3: `grep -v` (Found using `man grep`)
 - Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
-- **Example 1**:
+- **Example 1**: `grep -v` 
 >
 > 
       pranavrb@Pranavs-MacBook-Pro technical % grep  -r -v  "a" ./biomed/1471-2164-2-4.txt
