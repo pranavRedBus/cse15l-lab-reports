@@ -2,7 +2,7 @@
 
 
 ## - A Failure-Inducing Input
-...
+```
       
       @Test
       public void testReversed() {
@@ -12,10 +12,10 @@
         assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input1));
      
       }
-...
+```
 
 ## - A Working Input
-...
+```
 
       @Test
       public void testReversed() {
@@ -25,7 +25,7 @@
         assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
      
       }
-...
+```
 
 ## - Symptom
 -   Working Output
@@ -38,7 +38,7 @@
 ## - Bug
 -   Before
 
-...
+```
 
     static int[] reversed(int[] arr) {
 
@@ -49,11 +49,10 @@
         }
         return arr;
     }
-...
+```
 
 - After
->
->
+```
     static int[] reversed(int[] arr) {
       
         int[] newArray = new int[arr.length];
@@ -64,6 +63,7 @@
       
         return newArray;
     }
+```
 
 - **Explanation of Fix:** 
   The fix above works as the original code's bug was that it didn't rigorously test the `reverse()` method at all, creating an empty array to feed into it but not a comprehensive, filled array. By making this switch, I ensure that when the code is passed in with a 5 element `int[]` array, it properly returns the reverse copy of that array, checking with the hand-checked reversed array in the test method. 
@@ -72,8 +72,8 @@
 1. ## Command 1: `grep -l` (Found using `man grep`)
 - **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
 - **Example 1**: `grep -l` lists the names of the files, rather than the direct lines from the files, which contain the specified string. In this case, grep -r recursively searches the `technical` directory (current directory) for matches to *''base pair''*, and `-l` forces the output to list the names of the files, rather than each line in the file that contains the phrase. 
->
-> 
+
+```
       pranavrb@Pranavs-MacBook-Pro technical % grep -r -l  "base pair" .          
             ./plos/journal.pbio.0020223.txt
             ./plos/journal.pbio.0020190.txt
@@ -151,25 +151,28 @@
             ./biomed/1471-2350-2-8.txt
             ./biomed/1471-2164-2-4.txt
             ./biomed/1471-2164-4-2.txt
+```
 
 - **Example 2**: `grep -l` lists the names of the files, rather than the direct lines from the files, which contain the specified string. In this case, grep -r recursively searches the `plos` directory for matches to *''base pair''*, and `-l` forces the output to list the names of the files, rather than each line in the file that contains the phrase. 
->
->
+
+```
       pranavrb@Pranavs-MacBook-Pro technical % grep -r  -l "base pair" ./plos  
             ./plos/journal.pbio.0020223.txt
             ./plos/journal.pbio.0020190.txt
+```
 
 2. ## Command 2: `grep -c` (Found using `man grep`)
 - **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
 - **Example 1**: `grep -c` lists how many lines in the file contain the phrase. In this case, grep -c is given the file `biomed/rr74.txt`, and it returns 102 because that is how many lines in the file contain the phrase "the" as passed in.
->
->
+
+```
       pranavrb@Pranavs-MacBook-Pro technical % grep -c  "the" ./biomed/rr74.txt
             102
+```
 
 - **Example 2**: `grep -c` lists how many lines in the file contain the phrase. In this case, `grep -c` is paired with `-r` (which recursively searches through directories and provides individuals files for `grep`) and given the directory `./plos` as the argument. `grep -c` in this command lists the number of lines in each file that contains the phrase.
->
->
+
+```
       pranavrb@Pranavs-MacBook-Pro technical % grep -r -c "the" ./plos   
             ./plos/pmed.0020273.txt:25
             ./plos/journal.pbio.0030032.txt:74
@@ -423,12 +426,13 @@
             ./plos/journal.pbio.0020012.txt:123
             ./plos/pmed.0020281.txt:20
             ./plos/pmed.0020242.txt:25
+```
   
 3. ## Command 3: `grep -v` (Found using `man grep`)
-- Source Used: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
+- **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
 - **Example 1**: `grep -v` lists the lines of the file that do NOT contain the specified phrase, the exact opposite of what `grep` innately does. Combined with `grep -r`,  This command is executed recursively for all files in the specified directories and its further nested directories as well, though since only a file was given, only that file's content is checked and printed.
->
-> 
+
+```
       pranavrb@Pranavs-MacBook-Pro technical % grep  -r -v  "a" ./biomed/1471-2164-2-4.txt
             ./biomed/1471-2164-2-4.txt:
             ./biomed/1471-2164-2-4.txt:  
@@ -489,11 +493,12 @@
             ./biomed/1471-2164-2-4.txt:        
             ./biomed/1471-2164-2-4.txt:      
             ./biomed/1471-2164-2-4.txt:    
-            ./biomed/1471-2164-2-4.txt:  
+            ./biomed/1471-2164-2-4.txt:
+```
 
 - **Example 2**: `grep -v` lists the lines of the file that do NOT contain the specified phrase, the exact opposite of what `grep` innately does. Given the file `./biomed/1471-2164-2-4.txt` and phrase *"the"*, it printed out all the lines in the file not containing the phrase.
->
-> 
+
+```
       pranavrb@Pranavs-MacBook-Pro technical % grep  -v  "the" ./biomed/1471-2164-2-4.txt
     
         Background
@@ -775,12 +780,13 @@
           units/μl T7 gene 6 exonuclease (Amersham Pharmacia
           points. The digestion removes all but circular DNA. 3.5
           μl was resolved on an 8% PAGE sequencing gel.
+```
   
 4. ## Command 4: `grep -L` (Found using `man grep`)
 - **Source Used**: *“Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.*
 - **Example 1**: `grep -L` lists the names of the files, rather than the direct lines from the files, which **DO NOT** contain the specified string. In this case, grep -r recursively searches the `biomed` directory for matches to *''base''*, and `-L` forces the output to list the names of the files that do not contain the phrase at all. It is functionally opposite to `grep -l`.
->
->
+
+```
       pranavrb@Pranavs-MacBook-Pro technical % grep  -r -L  "base" ./biomed
             ./biomed/bcr620.txt
             ./biomed/1471-2091-2-11.txt
@@ -906,10 +912,11 @@
             ./biomed/1471-2210-1-3.txt
             ./biomed/1471-2334-1-13.txt
             ./biomed/1471-2172-3-9.txt
+```
 
 - **Example 2**:  `grep -L` lists the names of the files, rather than the direct lines from the files, which **DO NOT** contain the specified string. In this case, grep -r recursively searches the `plos` directory for matches to *''base pair''*, and `-L` forces the output to list the names of the files that do not contain the phrase at all.
->
->
+
+```
       pranavrb@Pranavs-MacBook-Pro technical % grep -r  -L "base pair" ./plos 
             ./plos/pmed.0020273.txt
             ./plos/journal.pbio.0030032.txt
@@ -1161,6 +1168,7 @@
             ./plos/journal.pbio.0020012.txt
             ./plos/pmed.0020281.txt
             ./plos/pmed.0020242.txt
+```
 
 # Sources Used
 1. “Grep ¶.” GNU Grep 3.11, www.gnu.org/software/grep/manual/grep.html. Accessed 13 Feb. 2024.
