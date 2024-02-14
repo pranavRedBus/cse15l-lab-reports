@@ -2,8 +2,8 @@
 
 
 ## - A Failure-Inducing Input
-> 
-> 
+...
+      
       @Test
       public void testReversed() {
      
@@ -12,11 +12,11 @@
         assertArrayEquals(new int[]{5,4,3,2,1}, ArrayExamples.reversed(input1));
      
       }
-
+...
 
 ## - A Working Input
-> 
-> 
+...
+
       @Test
       public void testReversed() {
      
@@ -25,7 +25,7 @@
         assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
      
       }
-
+...
 
 ## - Symptom
 -   Working Output
@@ -37,8 +37,9 @@
 
 ## - Bug
 -   Before
-> 
->
+
+...
+
     static int[] reversed(int[] arr) {
 
         int[] newArray = new int[arr.length];
@@ -48,6 +49,7 @@
         }
         return arr;
     }
+...
 
 - After
 >
