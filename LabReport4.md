@@ -2,7 +2,7 @@
 > By Pranav Reddy Bussannagari
 
 ## Step 4
-1. Type "ssh pbussannagari@ieng6.ucsd.edu"
+1. Type "`ssh` pbussannagari@ieng6.ucsd.edu"
 2. Click `<enter>`
 
 Picture
