@@ -41,7 +41,7 @@
 
 > Summary: Enter vim on `ListExamples.java` and then get to the character that is needed to change, using the arrow keys and/or the `h`, `j`, `k`, `l` keys, replacing that character using key `r`, and then exiting by using "`:wq`".
 
-![LR4S7](LR4S7.png)
+![LR4S7.2](LR4S7.2.png)
 
 ***
 
