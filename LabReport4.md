@@ -8,6 +8,8 @@
 
 ![LR4S4](LR4S4.png)
 
+...
+
 ## Step 5
 1. Type "`rm -rf l` + `<tab>`"
 2. Copy the `ssh` url to clone the Lab7 Repository (`git@github.com:pranavRedBus/lab7.git`) to clipboard
