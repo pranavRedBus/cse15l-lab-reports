@@ -8,7 +8,7 @@
 
 ![LR4S4](LR4S4.png)
 
-...
+***
 
 ## Step 5
 1. Type "`rm -rf l` + `<tab>`"
@@ -19,6 +19,8 @@
 
 ![LR4S5](LR4S5.png)
 
+***
+
 ## Step 6
 1. Type `cd lab7` + `<enter>`
 2. Type "`bash test.sh`" + `<enter>`
@@ -26,6 +28,8 @@
 > Summary: Change directory to `lab7`. Demonstrating the `ListExamplesTests.java`'s tests failed by running the script containing the information used to compile and run `ListExamplesTests.java`, our tester file.
 
 ![LR4S6](LR4S6.png)
+
+***
 
 ## Step 7
 1. Type "`vim ListExamples.java`" + `<enter>`
@@ -39,6 +43,8 @@
 
 ![LR4S7](LR4S7.png)
 
+***
+
 ## Step 8
 1. Type "`bash test.sh`"
 2. Click `<enter>`
@@ -46,6 +52,8 @@
 > Summary: Retyping `bash test.sh` to run the script containing the information used to compile and run `ListExamplesTests.java`, this time showing that the tests compile and run correctly.
 
 ![LR4S8](LR4S8.png)
+
+***
 
 ## Step 9
 1. Type "`git commit -am "Hi"`" + "`<enter>`"
